@@ -1,6 +1,6 @@
 # Prüfstand vom 11. Oktober 2026
 
-Das Paket enthält Quellcode, ein Xcode-Projekt und zwei Schemes. Es enthält keine installierbare IPA, Signatur, Zugangsdaten oder persönlichen Texte.
+Das Paket enthält Quellcode, ein Xcode-Projekt und zwei Schemes. Das Quellcode-Paket enthält keine Signatur, Zugangsdaten oder persönlichen Texte. Eine separat herunterladbare, unsignierte iPhone-IPA wurde mit Apples SDK gebaut und muss vor der Installation signiert werden.
 
 ## Ausgeführt
 
@@ -11,12 +11,17 @@ Das Paket enthält Quellcode, ein Xcode-Projekt und zwei Schemes. Es enthält ke
 - XML-Plists und die beiden gemeinsamen Schemes eingelesen; wiederholte Projekterzeugung liefert dieselben Dateien.
 - ZIP-Inhalt und SHA-256-Prüfsummen beim Verpacken geprüft.
 
+- GitHub-Mac: Xcode 16.4 / Swift 6.1.2, SDK 18.5, erfolgreicher Simulator-Build und iPhone-Gerätearchiv für **Textablage** mit Tastatur. [Build 38155451294](https://github.com/norobbc-wq/Textablage/actions/runs/38155451294), Commit `09e2c1a441031aedabcc8ba9bc127096676a93f2`. Die 24 Speichertests bestehen auch auf dem Mac.
+- Echte IPA nach Download geprüft: App und Tastatur mit ARM64/iPhoneOS, minimale iOS-Version 17.0, ZIP-Integrität, ausführbare Dateirechte, SHA-256 und Status `requiresSigningBeforeInstallation: true`.
+- IPA SHA-256: `a42fbf07305d2b1f76c5491aad4b97749b6f8d1ff117a03d3e0581e18a955d99`.
+- IPA-Verpackung außerdem mit 19 temporären Test-/Fehlerfällen geprüft; diese Testdateien werden nicht ausgeliefert.
+
 ## Noch offen
 
-- Kompilieren und Archivieren mit Xcode und Apples iOS-SDK. Der enthaltene GitHub-Workflow wurde nicht ausgeführt.
+- Der Apple-Build der zusätzlichen gemeinsamen Widget-Variante wird separat geprüft.
 - Signieren, Installieren und Ausführen auf einem iPhone.
 - Bedienung, Darstellung bei großen Schriften, Tastaturgröße und Verhalten in verschiedenen Host-Apps.
 - iOS-Einfügeberechtigungen, freiwillige Übernahme beim Öffnen und Reihenfolge von Widget-Link und App-Aktivierung.
 - App-Group-Berechtigung und gemeinsamer Speicher in der zusätzlichen Variante mit Widget.
 
-Die kostenlose Variante benötigt zum regulären Installieren einen Mac, Xcode und ein Personal Team. Das Projekt allein ermöglicht keine Installation nur mit einem iPhone. Die gemeinsame Sammlung benötigt eine App-Group-Berechtigung; deren kostenlose Bereitstellung mit einem Personal Team wurde hier nicht bestätigt.
+Die kostenlose Variante benötigt zum regulären Installieren einen Mac, Xcode und ein Personal Team. Ein vorhandenes IPA-Installationswerkzeug auf dem iPhone muss eine gültige Apple-Signatur bereitstellen; der Entwicklermodus allein ersetzt diese nicht. Die gemeinsame Sammlung benötigt eine App-Group-Berechtigung; deren kostenlose Bereitstellung mit einem Personal Team wurde hier nicht bestätigt.

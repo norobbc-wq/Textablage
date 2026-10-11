@@ -15,9 +15,9 @@ Der ausführliche Prüfstand steht in `PRUEFBERICHT.md`. `python3 scripts/packag
 
 ## Stand und Installation
 
-Dies ist ein vollständiges **Quellcode-Projekt**. Es liegt noch keine mit Apples SDK gebaute, signierte und auf dem iPhone getestete Installationsdatei vor. Das ZIP lässt sich auf einem iPhone herunterladen, aber nicht als App installieren. Für die normale kostenlose Installation einer eigenen App benötigt man einen Mac mit Xcode und eine Apple-ID. Mit einem kostenlosen Personal Team läuft die Bereitstellung nach sieben Tagen ab und muss erneuert werden.
+Das **Quellcode-Projekt** wurde mit Xcode 16.4 und Apples iPhone-SDK 18.5 erfolgreich für Simulator und iPhone gebaut. Für die Variante mit App und eigener Tastatur liegt eine **unsignierte IPA** vor. Sie braucht vor der Installation eine gültige Signatur durch ein geeignetes Installationswerkzeug. Auf einem iPhone wurde sie noch nicht ausgeführt. Das Quellcode-ZIP selbst lässt sich nicht als App installieren. Für die normale kostenlose Installation einer eigenen App benötigt man einen Mac mit Xcode und eine Apple-ID. Mit einem kostenlosen Personal Team läuft die Bereitstellung nach sieben Tagen ab und muss erneuert werden.
 
-Du musst für den Quellcode nichts kaufen. Eine dauerhafte kostenlose Installation ausschließlich mit dem iPhone kann dieses Projekt nicht bereitstellen. Es enthält keine fremden Signaturzertifikate und benötigt beim Entwickeln keine Zahlung oder Anmeldung an einem App-Backend.
+Du musst für den Quellcode nichts kaufen. Ob dein Installationswerkzeug auf dem iPhone die notwendige Signatur kostenlos bereitstellen kann, hängt von dessen Zertifikat und Berechtigungen ab; der Entwicklermodus allein genügt nicht. Es enthält keine fremden Signaturzertifikate und benötigt beim Entwickeln keine Zahlung oder Anmeldung an einem App-Backend.
 
 ### Variante „Textablage“
 
@@ -49,11 +49,11 @@ xcodebuild -project Textablage.xcodeproj -scheme Textablage \
   CODE_SIGNING_ALLOWED=NO build
 ```
 
-`swift test` prüft den Speicherkern auch unter Linux. UI, Tastatur und Widgets benötigen zum vollständigen Kompilieren Apples SDK. `.github/workflows/ios-build.yml` enthält dafür einen optionalen Mac-Build auf GitHub. Der Workflow wurde hier nicht ausgeführt.
+`swift test` prüft den Speicherkern auch unter Linux. UI, Tastatur und Widgets benötigen zum vollständigen Kompilieren Apples SDK. `.github/workflows/ios-build.yml` enthält dafür einen optionalen Mac-Build auf GitHub. Der Workflow wurde auf GitHub ausgeführt: [erfolgreicher Apple-Build](https://github.com/norobbc-wq/Textablage/actions/runs/38155451294).
 
 ### IPA-Datei
 
-Der GitHub-Workflow baut standardmäßig **Textablage** mit Apples iPhone-SDK, deaktiviert auch die Ad-hoc-Signierung des Linkers und erzeugt danach eine **unsignierte IPA** mit Prüfsumme und Statusdatei. Unter **Actions → iPhone-Projekt bauen → Run workflow** kann die Variante gewählt werden; das Ergebnis erscheint bei einem erfolgreichen Lauf unter **Artifacts → Textablage-IPA-unsigniert**. Das Projekt wird im Repository [norobbc-wq/Textablage](https://github.com/norobbc-wq/Textablage) bereitgestellt. Ein erfolgreicher Apple-Build ist noch nicht bestätigt.
+Der GitHub-Workflow baut standardmäßig **Textablage** mit Apples iPhone-SDK, deaktiviert auch die Ad-hoc-Signierung des Linkers und erzeugt danach eine **unsignierte IPA** mit Prüfsumme und Statusdatei. Unter **Actions → iPhone-Projekt bauen → Run workflow** kann die Variante gewählt werden; das Ergebnis erscheint bei einem erfolgreichen Lauf unter **Artifacts → Textablage-IPA-unsigniert**. Das Projekt wird im Repository [norobbc-wq/Textablage](https://github.com/norobbc-wq/Textablage) bereitgestellt. Der Apple-Build für **Textablage** ist bestätigt; die zusätzliche gemeinsame Variante wird separat geprüft.
 
 Ein eigenes Installationswerkzeug muss diese IPA vor der Installation mit gültigen Apple-Berechtigungen signieren; der Entwicklermodus allein ersetzt das nicht. Für die gemeinsame Variante müssen diese Berechtigungen auch die App Group und alle Erweiterungen abdecken. Das Projekt verwaltet keine Zertifikate und enthält keine Signierungszugänge.
 
@@ -64,7 +64,7 @@ python3 scripts/package_ipa.py build/Textablage.xcarchive \
   --output build/ipa/Textablage-unsigniert.ipa
 ```
 
-Der Packager prüft die App und Erweiterungen auf ARM64-Mach-O-Dateien für **iPhoneOS**, Bundle-IDs und sichere Pfade. Er erhält Dateirechte und interne Symlinks. Simulator-Builds, reine Quellcode-Ordner, signierte Eingaben und ungültige Archive werden abgelehnt. Eine echte IPA wurde in dieser Umgebung noch nicht gebaut.
+Der Packager prüft die App und Erweiterungen auf ARM64-Mach-O-Dateien für **iPhoneOS**, Bundle-IDs und sichere Pfade. Er erhält Dateirechte und interne Symlinks. Simulator-Builds, reine Quellcode-Ordner, signierte Eingaben und ungültige Archive werden abgelehnt. Die echte iPhone-IPA wurde auf dem GitHub-Mac gebaut und danach hier heruntergeladen und anhand der Prüfsumme, Bundle-Plists und ARM64-Geräte-Executables überprüft.
 
 ## Daten und Verhalten
 
@@ -74,7 +74,7 @@ Die Tastatur liest die Zwischenablage nur nach Antippen des Plus. Sie zeichnet k
 
 ## Prüfbericht
 
-24 echte Swift-Tests bestehen: gleichzeitige Änderungen, vollständige Unicode-Texte, Suche, Favoriten, Sicherungen, fehlerhafte Importe und Erhalt beschädigter Dateien. Die Swift-Dateien der Oberfläche und Erweiterungen sind syntaktisch geprüft. Plists, Projektverweise und Schemes werden geprüft. Ein erfolgreicher Apple-SDK-Build und Tests auf einem iPhone sind noch offen; besonders Tastaturgröße, Zwischenablage-Berechtigungen und Widget-/App-Aktivierungsreihenfolge müssen dort geprüft werden.
+24 echte Swift-Tests bestehen: gleichzeitige Änderungen, vollständige Unicode-Texte, Suche, Favoriten, Sicherungen, fehlerhafte Importe und Erhalt beschädigter Dateien. App und Tastatur sind mit Apples SDK für Simulator und iPhone kompiliert. Plists, Projektverweise und Schemes sind geprüft. Tests auf einem iPhone sind noch offen; besonders Tastaturgröße, Zwischenablage-Berechtigungen und Widget-/App-Aktivierungsreihenfolge müssen dort geprüft werden.
 
 ## Apple-Quellen
 
