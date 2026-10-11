@@ -23,7 +23,7 @@ public final class ClipRepository {
         }
         #endif
         let support = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first
-            ?? FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent(".textablage", isDirectory: true)
+            ?? URL(fileURLWithPath: NSHomeDirectory(), isDirectory: true).appendingPathComponent(".textablage", isDirectory: true)
         directory = support.appendingPathComponent("Textablage", isDirectory: true)
         usesSharedContainer = false
     }
