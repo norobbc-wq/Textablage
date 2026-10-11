@@ -15,7 +15,7 @@ Der ausführliche Prüfstand steht in `PRUEFBERICHT.md`. `python3 scripts/packag
 
 ## Stand und Installation
 
-Das **Quellcode-Projekt** wurde mit Xcode 16.4 und Apples iPhone-SDK 18.5 erfolgreich für Simulator und iPhone gebaut. Für die Variante mit App und eigener Tastatur liegt eine **unsignierte IPA** vor. Sie braucht vor der Installation eine gültige Signatur durch ein geeignetes Installationswerkzeug. Auf einem iPhone wurde sie noch nicht ausgeführt. Das Quellcode-ZIP selbst lässt sich nicht als App installieren. Für die normale kostenlose Installation einer eigenen App benötigt man einen Mac mit Xcode und eine Apple-ID. Mit einem kostenlosen Personal Team läuft die Bereitstellung nach sieben Tagen ab und muss erneuert werden.
+Das **Quellcode-Projekt** wurde mit Xcode 16.4 und Apples iPhone-SDK 18.5 erfolgreich für Simulator und iPhone gebaut. Für beide Varianten liegen **unsignierte IPAs** vor: App mit eigener Tastatur und App mit gemeinsamer Tastatur-/Widget-Sammlung. Sie braucht vor der Installation eine gültige Signatur durch ein geeignetes Installationswerkzeug. Auf einem iPhone wurde sie noch nicht ausgeführt. Das Quellcode-ZIP selbst lässt sich nicht als App installieren. Für die normale kostenlose Installation einer eigenen App benötigt man einen Mac mit Xcode und eine Apple-ID. Mit einem kostenlosen Personal Team läuft die Bereitstellung nach sieben Tagen ab und muss erneuert werden.
 
 Du musst für den Quellcode nichts kaufen. Ob dein Installationswerkzeug auf dem iPhone die notwendige Signatur kostenlos bereitstellen kann, hängt von dessen Zertifikat und Berechtigungen ab; der Entwicklermodus allein genügt nicht. Es enthält keine fremden Signaturzertifikate und benötigt beim Entwickeln keine Zahlung oder Anmeldung an einem App-Backend.
 
@@ -53,7 +53,7 @@ xcodebuild -project Textablage.xcodeproj -scheme Textablage \
 
 ### IPA-Datei
 
-Der GitHub-Workflow baut standardmäßig **Textablage** mit Apples iPhone-SDK, deaktiviert auch die Ad-hoc-Signierung des Linkers und erzeugt danach eine **unsignierte IPA** mit Prüfsumme und Statusdatei. Unter **Actions → iPhone-Projekt bauen → Run workflow** kann die Variante gewählt werden; das Ergebnis erscheint bei einem erfolgreichen Lauf unter **Artifacts → Textablage-IPA-unsigniert**. Das Projekt wird im Repository [norobbc-wq/Textablage](https://github.com/norobbc-wq/Textablage) bereitgestellt. Der Apple-Build für **Textablage** ist bestätigt; die zusätzliche gemeinsame Variante wird separat geprüft.
+Der GitHub-Workflow baut standardmäßig **Textablage** mit Apples iPhone-SDK, deaktiviert auch die Ad-hoc-Signierung des Linkers und erzeugt danach eine **unsignierte IPA** mit Prüfsumme und Statusdatei. Unter **Actions → iPhone-Projekt bauen → Run workflow** kann die Variante gewählt werden; das Ergebnis erscheint bei einem erfolgreichen Lauf unter **Artifacts → Textablage-IPA-unsigniert**. Das Projekt wird im Repository [norobbc-wq/Textablage](https://github.com/norobbc-wq/Textablage) bereitgestellt. Apple-Builds sind für beide Varianten bestätigt: [Textablage](https://github.com/norobbc-wq/Textablage/actions/runs/38155451294) und [Textablage-Gemeinsam](https://github.com/norobbc-wq/Textablage/actions/runs/38156678536).
 
 Ein eigenes Installationswerkzeug muss diese IPA vor der Installation mit gültigen Apple-Berechtigungen signieren; der Entwicklermodus allein ersetzt das nicht. Für die gemeinsame Variante müssen diese Berechtigungen auch die App Group und alle Erweiterungen abdecken. Das Projekt verwaltet keine Zertifikate und enthält keine Signierungszugänge.
 
@@ -74,7 +74,7 @@ Die Tastatur liest die Zwischenablage nur nach Antippen des Plus. Sie zeichnet k
 
 ## Prüfbericht
 
-24 echte Swift-Tests bestehen: gleichzeitige Änderungen, vollständige Unicode-Texte, Suche, Favoriten, Sicherungen, fehlerhafte Importe und Erhalt beschädigter Dateien. App und Tastatur sind mit Apples SDK für Simulator und iPhone kompiliert. Plists, Projektverweise und Schemes sind geprüft. Tests auf einem iPhone sind noch offen; besonders Tastaturgröße, Zwischenablage-Berechtigungen und Widget-/App-Aktivierungsreihenfolge müssen dort geprüft werden.
+24 echte Swift-Tests bestehen: gleichzeitige Änderungen, vollständige Unicode-Texte, Suche, Favoriten, Sicherungen, fehlerhafte Importe und Erhalt beschädigter Dateien. App, Tastatur und Widget sind mit Apples SDK für Simulator und iPhone kompiliert. Plists, Projektverweise und Schemes sind geprüft. Tests auf einem iPhone sind noch offen; besonders Tastaturgröße, Zwischenablage-Berechtigungen und Widget-/App-Aktivierungsreihenfolge müssen dort geprüft werden.
 
 ## Apple-Quellen
 

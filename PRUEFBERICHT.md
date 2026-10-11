@@ -16,9 +16,11 @@ Das Paket enthält Quellcode, ein Xcode-Projekt und zwei Schemes. Das Quellcode-
 - IPA SHA-256: `a42fbf07305d2b1f76c5491aad4b97749b6f8d1ff117a03d3e0581e18a955d99`.
 - IPA-Verpackung außerdem mit 19 temporären Test-/Fehlerfällen geprüft; diese Testdateien werden nicht ausgeliefert.
 
+- Auch **Textablage-Gemeinsam** mit App, Tastatur und Widget hat Simulator-Build, Gerätearchiv und IPA-Verpackung bestanden: [Build 38156678536](https://github.com/norobbc-wq/Textablage/actions/runs/38156678536). Die separate IPA enthält drei geprüfte ARM64/iPhoneOS-Bundles, alle mit Mindestversion iOS 17.0.
+- Widget-IPA SHA-256: `0bdf3d6f949c607a955f2e588feb4bc8f70f42d227d8e6bba11b32d133e34d05`.
+
 ## Noch offen
 
-- Der Apple-Build der zusätzlichen gemeinsamen Widget-Variante wird separat geprüft.
 - Signieren, Installieren und Ausführen auf einem iPhone.
 - Bedienung, Darstellung bei großen Schriften, Tastaturgröße und Verhalten in verschiedenen Host-Apps.
 - iOS-Einfügeberechtigungen, freiwillige Übernahme beim Öffnen und Reihenfolge von Widget-Link und App-Aktivierung.
