@@ -1,0 +1,1165 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C4339038FA5C5C7997EA02B /* BackupCodec.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 470586CBA5ED8C091A24F3C2 /* BackupCodec.swift */;
+		};
+		1BA8612FF4C7A61E2AD0FFD5 /* BackupDocument.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 4B36BC516B9B321668E90E3D /* BackupDocument.swift */;
+		};
+		1E07F277A7A545786C07859D /* ClipOperations.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 5F5BC54A01FC65FBD7579760 /* ClipOperations.swift */;
+		};
+		2B9859A4BCB7A4ABE5B7E254 /* BackupCodec.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 470586CBA5ED8C091A24F3C2 /* BackupCodec.swift */;
+		};
+		3014933AE5DC09A0B0C9CB6C /* PrivacyInfo.xcprivacy in Resources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 392BDC3F55CEC1885F16285B /* PrivacyInfo.xcprivacy */;
+		};
+		37BBC05B2166CA3FAEA56600 /* ClipEntry.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 1C1A2DC4EDD1CE05388C17BA /* ClipEntry.swift */;
+		};
+		49D47C0C822BBA00790199A6 /* PrivacyInfo.xcprivacy in Resources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 392BDC3F55CEC1885F16285B /* PrivacyInfo.xcprivacy */;
+		};
+		535011318BC199BFE8892189 /* BackupCodec.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 470586CBA5ED8C091A24F3C2 /* BackupCodec.swift */;
+		};
+		56F43D5913C3E5B8F7607644 /* KeyboardViewController.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = D47FA8A78BC38FCDA988AC7C /* KeyboardViewController.swift */;
+		};
+		5DF3FB2F163ECCFF567EAE05 /* BackupDocument.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 4B36BC516B9B321668E90E3D /* BackupDocument.swift */;
+		};
+		601E3A43F32EA16FC76CDF76 /* Assets.xcassets in Resources */ = {
+			isa = "PBXBuildFile";
+			fileRef = B8FA18644A594FE11B39A425 /* Assets.xcassets */;
+		};
+		6369ED6C23F436D6B62A7D12 /* TextablageApp.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = DE397B34B29915B074B16B22 /* TextablageApp.swift */;
+		};
+		64DFA2D53E0FCC80D01DB76E /* CollectionView.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = F1FF4216808255F530655E93 /* CollectionView.swift */;
+		};
+		68E88E22082E9CDEDBCD76A3 /* Assets.xcassets in Resources */ = {
+			isa = "PBXBuildFile";
+			fileRef = B8FA18644A594FE11B39A425 /* Assets.xcassets */;
+		};
+		6B5847ECF3D467860A543C9D /* ClipOperations.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 5F5BC54A01FC65FBD7579760 /* ClipOperations.swift */;
+		};
+		6F2D7E6052B4448A447CCD5B /* TextablageKeyboard.appex in Embed App Extensions */ = {
+			isa = "PBXBuildFile";
+			fileRef = 7DBD4BA12F5F150962C02EE7 /* TextablageKeyboard.appex */;
+			settings = {
+				ATTRIBUTES = (
+					"CodeSignOnCopy",
+					"RemoveHeadersOnCopy",
+				);
+			};
+		};
+		784CB53A079F83E5F15FBEA6 /* PrivacyInfo.xcprivacy in Resources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 392BDC3F55CEC1885F16285B /* PrivacyInfo.xcprivacy */;
+		};
+		7F6957A4AADE061DBA91DD7E /* CollectionView.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = F1FF4216808255F530655E93 /* CollectionView.swift */;
+		};
+		7F9FA0899646C59E5A945B86 /* PasteButton.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = CBD366EDC3EE7B8B5D67D094 /* PasteButton.swift */;
+		};
+		8429CD6C03280D1B803271AF /* PasteButton.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = CBD366EDC3EE7B8B5D67D094 /* PasteButton.swift */;
+		};
+		88C5273ED47A4941B2EFBDC8 /* ClipRepository.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 28299F61C4B0C149F3E7670A /* ClipRepository.swift */;
+		};
+		89F7252423CBC5E789C01680 /* BackupCodec.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 470586CBA5ED8C091A24F3C2 /* BackupCodec.swift */;
+		};
+		8B5862F16D01B5A853EE61BE /* ClipboardWidget.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 117C91A7FE7C820CB55669FB /* ClipboardWidget.swift */;
+		};
+		8F25ACA0788C4FC183AFA6A6 /* ClipEntry.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 1C1A2DC4EDD1CE05388C17BA /* ClipEntry.swift */;
+		};
+		94EA7218B131BACA1FF81FCB /* ClipEntry.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 1C1A2DC4EDD1CE05388C17BA /* ClipEntry.swift */;
+		};
+		97053FCA1377074F50521FA3 /* ClipEntry.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 1C1A2DC4EDD1CE05388C17BA /* ClipEntry.swift */;
+		};
+		9A91DF74E8F4E952FA5A4A60 /* PrivacyInfo.xcprivacy in Resources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 392BDC3F55CEC1885F16285B /* PrivacyInfo.xcprivacy */;
+		};
+		9B5DDCB62CE1DC7CC3097079 /* ClipOperations.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 5F5BC54A01FC65FBD7579760 /* ClipOperations.swift */;
+		};
+		9DD747E8FB5A244373C190F3 /* ClipEntry.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 1C1A2DC4EDD1CE05388C17BA /* ClipEntry.swift */;
+		};
+		A8040DDED2224F3B90373158 /* PrivacyInfo.xcprivacy in Resources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 392BDC3F55CEC1885F16285B /* PrivacyInfo.xcprivacy */;
+		};
+		A87EABF89D08E7431C6057BD /* SharedClipStore.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 012F10F0D4C8F056C2F84A8E /* SharedClipStore.swift */;
+		};
+		A8EE6CAAD996EB4D3D3E8D34 /* ClipRepository.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 28299F61C4B0C149F3E7670A /* ClipRepository.swift */;
+		};
+		AFBF79A587190AAF27063CB9 /* TextablageWidgets.appex in Embed App Extensions */ = {
+			isa = "PBXBuildFile";
+			fileRef = DE01528F7EFE89BD5FE0673A /* TextablageWidgets.appex */;
+			settings = {
+				ATTRIBUTES = (
+					"CodeSignOnCopy",
+					"RemoveHeadersOnCopy",
+				);
+			};
+		};
+		B050BF2CBAE5DE6155892BE1 /* ClipRepository.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 28299F61C4B0C149F3E7670A /* ClipRepository.swift */;
+		};
+		B7F899EFDBD9AEADB681941E /* TextablageKeyboardShared.appex in Embed App Extensions */ = {
+			isa = "PBXBuildFile";
+			fileRef = 3327B97A00712410DE19046A /* TextablageKeyboardShared.appex */;
+			settings = {
+				ATTRIBUTES = (
+					"CodeSignOnCopy",
+					"RemoveHeadersOnCopy",
+				);
+			};
+		};
+		BBA9994C2760961F270C4058 /* ClipOperations.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 5F5BC54A01FC65FBD7579760 /* ClipOperations.swift */;
+		};
+		C3B0ED30FB586D2AC0D7995F /* TextablageApp.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = DE397B34B29915B074B16B22 /* TextablageApp.swift */;
+		};
+		C52A03403B85CCF6E86DFF28 /* SharedClipStore.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 012F10F0D4C8F056C2F84A8E /* SharedClipStore.swift */;
+		};
+		CF42FF7D4B0E52EE767580E4 /* BackupCodec.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 470586CBA5ED8C091A24F3C2 /* BackupCodec.swift */;
+		};
+		D7162ACA4B4111D0EEF794FC /* ClipRepository.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 28299F61C4B0C149F3E7670A /* ClipRepository.swift */;
+		};
+		DA88ABB1C07DFF72BBA7B1E2 /* SharedClipStore.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 012F10F0D4C8F056C2F84A8E /* SharedClipStore.swift */;
+		};
+		DCB6D22FA31C434FDD86EE1D /* SharedClipStore.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 012F10F0D4C8F056C2F84A8E /* SharedClipStore.swift */;
+		};
+		DCE969918C34AE57B9F63B04 /* KeyboardViewController.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = D47FA8A78BC38FCDA988AC7C /* KeyboardViewController.swift */;
+		};
+		DEA0D05F19644D0A9FA2CA3F /* ClipRepository.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 28299F61C4B0C149F3E7670A /* ClipRepository.swift */;
+		};
+		FC1AFB0C1C15E975CF8005B9 /* SharedClipStore.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 012F10F0D4C8F056C2F84A8E /* SharedClipStore.swift */;
+		};
+		FD80D26F50E2C449DDCCC2C0 /* ClipOperations.swift in Sources */ = {
+			isa = "PBXBuildFile";
+			fileRef = 5F5BC54A01FC65FBD7579760 /* ClipOperations.swift */;
+		};
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A6E8D6FFDD919139904AAEC /* PBXContainerItemProxy */ = {
+			isa = "PBXContainerItemProxy";
+			containerPortal = 244210E48437B6556980A702 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE96DB9036E8183175E51A56 /* TextablageKeyboardShared */;
+			remoteInfo = "TextablageKeyboardShared";
+		};
+		2B20D33568B0848096E10A17 /* PBXContainerItemProxy */ = {
+			isa = "PBXContainerItemProxy";
+			containerPortal = 244210E48437B6556980A702 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54B894492FBF58FC4D9DF710 /* TextablageKeyboard */;
+			remoteInfo = "TextablageKeyboard";
+		};
+		5D186E2EE1C0EFF66695E44B /* PBXContainerItemProxy */ = {
+			isa = "PBXContainerItemProxy";
+			containerPortal = 244210E48437B6556980A702 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4B7D7A5A63994628D35F7E9 /* TextablageWidgets */;
+			remoteInfo = "TextablageWidgets";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E5A66DF7EE928D6DD9BE6A4A /* Embed App Extensions */ = {
+			isa = "PBXCopyFilesBuildPhase";
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6F2D7E6052B4448A447CCD5B /* TextablageKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEDA4454FC16E869D2A83A35 /* Embed App Extensions */ = {
+			isa = "PBXCopyFilesBuildPhase";
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B7F899EFDBD9AEADB681941E /* TextablageKeyboardShared.appex in Embed App Extensions */,
+				AFBF79A587190AAF27063CB9 /* TextablageWidgets.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		012F10F0D4C8F056C2F84A8E /* SharedClipStore.swift */ = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "SharedClipStore.swift";
+			sourceTree = "<group>";
+		};
+		117C91A7FE7C820CB55669FB /* ClipboardWidget.swift */ = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "ClipboardWidget.swift";
+			sourceTree = "<group>";
+		};
+		1C1A2DC4EDD1CE05388C17BA /* ClipEntry.swift */ = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "ClipEntry.swift";
+			sourceTree = "<group>";
+		};
+		223DD5E462A3D08B0335AFC0 /* Shared.entitlements */ = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "text.plist.entitlements";
+			path = "Shared.entitlements";
+			sourceTree = "<group>";
+		};
+		28299F61C4B0C149F3E7670A /* ClipRepository.swift */ = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "ClipRepository.swift";
+			sourceTree = "<group>";
+		};
+		3327B97A00712410DE19046A /* TextablageKeyboardShared.appex */ = {
+			isa = "PBXFileReference";
+			explicitFileType = "wrapper.app-extension";
+			includeInIndex = 0;
+			path = "TextablageKeyboardShared.appex";
+			sourceTree = "BUILT_PRODUCTS_DIR";
+		};
+		392BDC3F55CEC1885F16285B /* PrivacyInfo.xcprivacy */ = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "text.xml";
+			path = "PrivacyInfo.xcprivacy";
+			sourceTree = "<group>";
+		};
+		470586CBA5ED8C091A24F3C2 /* BackupCodec.swift */ = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "BackupCodec.swift";
+			sourceTree = "<group>";
+		};
+		4B36BC516B9B321668E90E3D /* BackupDocument.swift */ = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "BackupDocument.swift";
+			sourceTree = "<group>";
+		};
+		5F5BC54A01FC65FBD7579760 /* ClipOperations.swift */ = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "ClipOperations.swift";
+			sourceTree = "<group>";
+		};
+		7B44DDD89D4FDF1BD090FFD8 /* Info.plist */ = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "text.plist.xml";
+			path = "Info.plist";
+			sourceTree = "<group>";
+		};
+		7DBD4BA12F5F150962C02EE7 /* TextablageKeyboard.appex */ = {
+			isa = "PBXFileReference";
+			explicitFileType = "wrapper.app-extension";
+			includeInIndex = 0;
+			path = "TextablageKeyboard.appex";
+			sourceTree = "BUILT_PRODUCTS_DIR";
+		};
+		8F55A8E69A899507006623B5 /* Textablage.app */ = {
+			isa = "PBXFileReference";
+			explicitFileType = "wrapper.application";
+			includeInIndex = 0;
+			path = "Textablage.app";
+			sourceTree = "BUILT_PRODUCTS_DIR";
+		};
+		975002C2E063618E5FD0558D /* TextablageShared.app */ = {
+			isa = "PBXFileReference";
+			explicitFileType = "wrapper.application";
+			includeInIndex = 0;
+			path = "TextablageShared.app";
+			sourceTree = "BUILT_PRODUCTS_DIR";
+		};
+		B8FA18644A594FE11B39A425 /* Assets.xcassets */ = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "folder.assetcatalog";
+			path = "Assets.xcassets";
+			sourceTree = "<group>";
+		};
+		CBD366EDC3EE7B8B5D67D094 /* PasteButton.swift */ = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "PasteButton.swift";
+			sourceTree = "<group>";
+		};
+		D47FA8A78BC38FCDA988AC7C /* KeyboardViewController.swift */ = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "KeyboardViewController.swift";
+			sourceTree = "<group>";
+		};
+		DE01528F7EFE89BD5FE0673A /* TextablageWidgets.appex */ = {
+			isa = "PBXFileReference";
+			explicitFileType = "wrapper.app-extension";
+			includeInIndex = 0;
+			path = "TextablageWidgets.appex";
+			sourceTree = "BUILT_PRODUCTS_DIR";
+		};
+		DE397B34B29915B074B16B22 /* TextablageApp.swift */ = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "TextablageApp.swift";
+			sourceTree = "<group>";
+		};
+		E72685212AF966A85FF3F9E9 /* Info.plist */ = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "text.plist.xml";
+			path = "Info.plist";
+			sourceTree = "<group>";
+		};
+		F1FF4216808255F530655E93 /* CollectionView.swift */ = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "sourcecode.swift";
+			path = "CollectionView.swift";
+			sourceTree = "<group>";
+		};
+		F73AD719F865151D5B19EACD /* Info.plist */ = {
+			isa = "PBXFileReference";
+			lastKnownFileType = "text.plist.xml";
+			path = "Info.plist";
+			sourceTree = "<group>";
+		};
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24ADB99D2A5AE070ABE84C2B /* Frameworks */ = {
+			isa = "PBXFrameworksBuildPhase";
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD037DA776286AA588A2374 /* Frameworks */ = {
+			isa = "PBXFrameworksBuildPhase";
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4795F6B2804E0EAB78C343A2 /* Frameworks */ = {
+			isa = "PBXFrameworksBuildPhase";
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F0A8D9577C90860C6DA4961 /* Frameworks */ = {
+			isa = "PBXFrameworksBuildPhase";
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF5420975C8BDF3A051959D /* Frameworks */ = {
+			isa = "PBXFrameworksBuildPhase";
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0008CA60E7F2AC91C768CE25 /* Widgets */ = {
+			isa = "PBXGroup";
+			children = (
+				117C91A7FE7C820CB55669FB /* ClipboardWidget.swift */,
+				F73AD719F865151D5B19EACD /* Info.plist */,
+			);
+			path = "Widgets";
+			sourceTree = "<group>";
+		};
+		13C4608B5138EBE9B3A45A55 /* App */ = {
+			isa = "PBXGroup";
+			children = (
+				4B36BC516B9B321668E90E3D /* BackupDocument.swift */,
+				F1FF4216808255F530655E93 /* CollectionView.swift */,
+				CBD366EDC3EE7B8B5D67D094 /* PasteButton.swift */,
+				DE397B34B29915B074B16B22 /* TextablageApp.swift */,
+				E72685212AF966A85FF3F9E9 /* Info.plist */,
+			);
+			path = "App";
+			sourceTree = "<group>";
+		};
+		1B3039B2E15DD2AB7EA6156D /* Config */ = {
+			isa = "PBXGroup";
+			children = (
+				223DD5E462A3D08B0335AFC0 /* Shared.entitlements */,
+			);
+			path = "Config";
+			sourceTree = "<group>";
+		};
+		369366657F0CC118760331FE /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				B8FA18644A594FE11B39A425 /* Assets.xcassets */,
+				392BDC3F55CEC1885F16285B /* PrivacyInfo.xcprivacy */,
+			);
+			path = "Resources";
+			sourceTree = "<group>";
+		};
+		6F7199ED7B63CDA338A0FB82 /* Products */ = {
+			isa = "PBXGroup";
+			children = (
+				8F55A8E69A899507006623B5 /* Textablage.app */,
+				7DBD4BA12F5F150962C02EE7 /* TextablageKeyboard.appex */,
+				975002C2E063618E5FD0558D /* TextablageShared.app */,
+				3327B97A00712410DE19046A /* TextablageKeyboardShared.appex */,
+				DE01528F7EFE89BD5FE0673A /* TextablageWidgets.appex */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		AA0596BBDB4DCC95D5D4F10C /* Main Group */ = {
+			isa = "PBXGroup";
+			children = (
+				13C4608B5138EBE9B3A45A55 /* App */,
+				B8A7C4C7C43B9A2F11EEEA63 /* Shared */,
+				EC567820080BF3D2EC564E7E /* Keyboard */,
+				0008CA60E7F2AC91C768CE25 /* Widgets */,
+				369366657F0CC118760331FE /* Resources */,
+				1B3039B2E15DD2AB7EA6156D /* Config */,
+				6F7199ED7B63CDA338A0FB82 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B8A7C4C7C43B9A2F11EEEA63 /* Shared */ = {
+			isa = "PBXGroup";
+			children = (
+				470586CBA5ED8C091A24F3C2 /* BackupCodec.swift */,
+				1C1A2DC4EDD1CE05388C17BA /* ClipEntry.swift */,
+				5F5BC54A01FC65FBD7579760 /* ClipOperations.swift */,
+				28299F61C4B0C149F3E7670A /* ClipRepository.swift */,
+				012F10F0D4C8F056C2F84A8E /* SharedClipStore.swift */,
+			);
+			path = "Shared";
+			sourceTree = "<group>";
+		};
+		EC567820080BF3D2EC564E7E /* Keyboard */ = {
+			isa = "PBXGroup";
+			children = (
+				D47FA8A78BC38FCDA988AC7C /* KeyboardViewController.swift */,
+				7B44DDD89D4FDF1BD090FFD8 /* Info.plist */,
+			);
+			path = "Keyboard";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54B894492FBF58FC4D9DF710 /* TextablageKeyboard */ = {
+			isa = "PBXNativeTarget";
+			buildConfigurationList = DEF0847741357DE2FABB8E39 /* Build configuration list for TextablageKeyboard */;
+			buildPhases = (
+				914A136E543515D2DCE323D6 /* Sources */,
+				3AD037DA776286AA588A2374 /* Frameworks */,
+				1CB9FA37E915F22B37C272C8 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = "TextablageKeyboard";
+			productName = "TextablageKeyboard";
+			productReference = 7DBD4BA12F5F150962C02EE7 /* TextablageKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9F61C1ACB8F7EAEC2CFA5AC7 /* Textablage */ = {
+			isa = "PBXNativeTarget";
+			buildConfigurationList = 761165C80791F6D244DD6FF4 /* Build configuration list for Textablage */;
+			buildPhases = (
+				34BEF49B502D89BB7C9B8338 /* Sources */,
+				4F0A8D9577C90860C6DA4961 /* Frameworks */,
+				1FF4D57BEA4FE2246B4CE88A /* Resources */,
+				E5A66DF7EE928D6DD9BE6A4A /* Embed App Extensions */,
+			);
+			buildRules = ();
+			dependencies = (
+				D96309C869D3F143FFCB3C12 /* TextablageKeyboard */,
+			);
+			name = "Textablage";
+			productName = "Textablage";
+			productReference = 8F55A8E69A899507006623B5 /* Textablage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA5A45312B09E84D10A098FA /* TextablageShared */ = {
+			isa = "PBXNativeTarget";
+			buildConfigurationList = 1E0F7EE884023E02B5DD2992 /* Build configuration list for TextablageShared */;
+			buildPhases = (
+				26038B02245A6C6CEBCCBB59 /* Sources */,
+				24ADB99D2A5AE070ABE84C2B /* Frameworks */,
+				C116FB950F6DC84C099DA77E /* Resources */,
+				EEDA4454FC16E869D2A83A35 /* Embed App Extensions */,
+			);
+			buildRules = ();
+			dependencies = (
+				105FA2897CF7D6CED725FC5E /* TextablageKeyboardShared */,
+				F7580BDFA29A4896DE427DC2 /* TextablageWidgets */,
+			);
+			name = "TextablageShared";
+			productName = "TextablageShared";
+			productReference = 975002C2E063618E5FD0558D /* TextablageShared.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE96DB9036E8183175E51A56 /* TextablageKeyboardShared */ = {
+			isa = "PBXNativeTarget";
+			buildConfigurationList = F318C2C0A9E5221AF7949111 /* Build configuration list for TextablageKeyboardShared */;
+			buildPhases = (
+				9CAF5330DB21F36356EA1C02 /* Sources */,
+				4795F6B2804E0EAB78C343A2 /* Frameworks */,
+				692A153D0F8C06FA9B368806 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = "TextablageKeyboardShared";
+			productName = "TextablageKeyboardShared";
+			productReference = 3327B97A00712410DE19046A /* TextablageKeyboardShared.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F4B7D7A5A63994628D35F7E9 /* TextablageWidgets */ = {
+			isa = "PBXNativeTarget";
+			buildConfigurationList = 226F42DF1740AAD545409B43 /* Build configuration list for TextablageWidgets */;
+			buildPhases = (
+				B17FE452A3812A1AF72DF3A1 /* Sources */,
+				CBF5420975C8BDF3A051959D /* Frameworks */,
+				721CA6AF7E5B3A542025DD63 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = "TextablageWidgets";
+			productName = "TextablageWidgets";
+			productReference = DE01528F7EFE89BD5FE0673A /* TextablageWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		244210E48437B6556980A702 /* Project object */ = {
+			isa = "PBXProject";
+			attributes = {
+				LastSwiftUpdateCheck = "1500";
+				LastUpgradeCheck = "1500";
+				TargetAttributes = {
+					"9F61C1ACB8F7EAEC2CFA5AC7" = {
+						CreatedOnToolsVersion = "15.0";
+						ProvisioningStyle = "Automatic";
+					};
+					"54B894492FBF58FC4D9DF710" = {
+						CreatedOnToolsVersion = "15.0";
+						ProvisioningStyle = "Automatic";
+					};
+					EA5A45312B09E84D10A098FA = {
+						CreatedOnToolsVersion = "15.0";
+						ProvisioningStyle = "Automatic";
+					};
+					EE96DB9036E8183175E51A56 = {
+						CreatedOnToolsVersion = "15.0";
+						ProvisioningStyle = "Automatic";
+					};
+					F4B7D7A5A63994628D35F7E9 = {
+						CreatedOnToolsVersion = "15.0";
+						ProvisioningStyle = "Automatic";
+					};
+				};
+			};
+			buildConfigurationList = 14E586E4324BDDD5494634DC /* Build configuration list for project */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "de";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				"de",
+				"en",
+				"Base",
+			);
+			mainGroup = AA0596BBDB4DCC95D5D4F10C /* Main Group */;
+			productRefGroup = 6F7199ED7B63CDA338A0FB82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F61C1ACB8F7EAEC2CFA5AC7 /* Textablage */,
+				54B894492FBF58FC4D9DF710 /* TextablageKeyboard */,
+				EA5A45312B09E84D10A098FA /* TextablageShared */,
+				EE96DB9036E8183175E51A56 /* TextablageKeyboardShared */,
+				F4B7D7A5A63994628D35F7E9 /* TextablageWidgets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CB9FA37E915F22B37C272C8 /* Resources */ = {
+			isa = "PBXResourcesBuildPhase";
+			buildActionMask = 2147483647;
+			files = (
+				A8040DDED2224F3B90373158 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FF4D57BEA4FE2246B4CE88A /* Resources */ = {
+			isa = "PBXResourcesBuildPhase";
+			buildActionMask = 2147483647;
+			files = (
+				68E88E22082E9CDEDBCD76A3 /* Assets.xcassets in Resources */,
+				49D47C0C822BBA00790199A6 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		692A153D0F8C06FA9B368806 /* Resources */ = {
+			isa = "PBXResourcesBuildPhase";
+			buildActionMask = 2147483647;
+			files = (
+				3014933AE5DC09A0B0C9CB6C /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721CA6AF7E5B3A542025DD63 /* Resources */ = {
+			isa = "PBXResourcesBuildPhase";
+			buildActionMask = 2147483647;
+			files = (
+				784CB53A079F83E5F15FBEA6 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C116FB950F6DC84C099DA77E /* Resources */ = {
+			isa = "PBXResourcesBuildPhase";
+			buildActionMask = 2147483647;
+			files = (
+				601E3A43F32EA16FC76CDF76 /* Assets.xcassets in Resources */,
+				9A91DF74E8F4E952FA5A4A60 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26038B02245A6C6CEBCCBB59 /* Sources */ = {
+			isa = "PBXSourcesBuildPhase";
+			buildActionMask = 2147483647;
+			files = (
+				5DF3FB2F163ECCFF567EAE05 /* BackupDocument.swift in Sources */,
+				7F6957A4AADE061DBA91DD7E /* CollectionView.swift in Sources */,
+				8429CD6C03280D1B803271AF /* PasteButton.swift in Sources */,
+				C3B0ED30FB586D2AC0D7995F /* TextablageApp.swift in Sources */,
+				2B9859A4BCB7A4ABE5B7E254 /* BackupCodec.swift in Sources */,
+				97053FCA1377074F50521FA3 /* ClipEntry.swift in Sources */,
+				6B5847ECF3D467860A543C9D /* ClipOperations.swift in Sources */,
+				A8EE6CAAD996EB4D3D3E8D34 /* ClipRepository.swift in Sources */,
+				C52A03403B85CCF6E86DFF28 /* SharedClipStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34BEF49B502D89BB7C9B8338 /* Sources */ = {
+			isa = "PBXSourcesBuildPhase";
+			buildActionMask = 2147483647;
+			files = (
+				1BA8612FF4C7A61E2AD0FFD5 /* BackupDocument.swift in Sources */,
+				64DFA2D53E0FCC80D01DB76E /* CollectionView.swift in Sources */,
+				7F9FA0899646C59E5A945B86 /* PasteButton.swift in Sources */,
+				6369ED6C23F436D6B62A7D12 /* TextablageApp.swift in Sources */,
+				0C4339038FA5C5C7997EA02B /* BackupCodec.swift in Sources */,
+				8F25ACA0788C4FC183AFA6A6 /* ClipEntry.swift in Sources */,
+				BBA9994C2760961F270C4058 /* ClipOperations.swift in Sources */,
+				88C5273ED47A4941B2EFBDC8 /* ClipRepository.swift in Sources */,
+				DCB6D22FA31C434FDD86EE1D /* SharedClipStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		914A136E543515D2DCE323D6 /* Sources */ = {
+			isa = "PBXSourcesBuildPhase";
+			buildActionMask = 2147483647;
+			files = (
+				DCE969918C34AE57B9F63B04 /* KeyboardViewController.swift in Sources */,
+				89F7252423CBC5E789C01680 /* BackupCodec.swift in Sources */,
+				9DD747E8FB5A244373C190F3 /* ClipEntry.swift in Sources */,
+				FD80D26F50E2C449DDCCC2C0 /* ClipOperations.swift in Sources */,
+				DEA0D05F19644D0A9FA2CA3F /* ClipRepository.swift in Sources */,
+				DA88ABB1C07DFF72BBA7B1E2 /* SharedClipStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CAF5330DB21F36356EA1C02 /* Sources */ = {
+			isa = "PBXSourcesBuildPhase";
+			buildActionMask = 2147483647;
+			files = (
+				56F43D5913C3E5B8F7607644 /* KeyboardViewController.swift in Sources */,
+				535011318BC199BFE8892189 /* BackupCodec.swift in Sources */,
+				37BBC05B2166CA3FAEA56600 /* ClipEntry.swift in Sources */,
+				9B5DDCB62CE1DC7CC3097079 /* ClipOperations.swift in Sources */,
+				B050BF2CBAE5DE6155892BE1 /* ClipRepository.swift in Sources */,
+				FC1AFB0C1C15E975CF8005B9 /* SharedClipStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17FE452A3812A1AF72DF3A1 /* Sources */ = {
+			isa = "PBXSourcesBuildPhase";
+			buildActionMask = 2147483647;
+			files = (
+				8B5862F16D01B5A853EE61BE /* ClipboardWidget.swift in Sources */,
+				CF42FF7D4B0E52EE767580E4 /* BackupCodec.swift in Sources */,
+				94EA7218B131BACA1FF81FCB /* ClipEntry.swift in Sources */,
+				1E07F277A7A545786C07859D /* ClipOperations.swift in Sources */,
+				D7162ACA4B4111D0EEF794FC /* ClipRepository.swift in Sources */,
+				A87EABF89D08E7431C6057BD /* SharedClipStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		105FA2897CF7D6CED725FC5E /* TextablageKeyboardShared */ = {
+			isa = "PBXTargetDependency";
+			target = EE96DB9036E8183175E51A56 /* TextablageKeyboardShared */;
+			targetProxy = 0A6E8D6FFDD919139904AAEC /* PBXContainerItemProxy */;
+		};
+		D96309C869D3F143FFCB3C12 /* TextablageKeyboard */ = {
+			isa = "PBXTargetDependency";
+			target = 54B894492FBF58FC4D9DF710 /* TextablageKeyboard */;
+			targetProxy = 2B20D33568B0848096E10A17 /* PBXContainerItemProxy */;
+		};
+		F7580BDFA29A4896DE427DC2 /* TextablageWidgets */ = {
+			isa = "PBXTargetDependency";
+			target = F4B7D7A5A63994628D35F7E9 /* TextablageWidgets */;
+			targetProxy = 5D186E2EE1C0EFF66695E44B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D5D2DEA00B65A422C3CD1F5 /* Release */ = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				CODE_SIGN_STYLE = "Automatic";
+				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = "1";
+				MARKETING_VERSION = "1.0.0";
+				GENERATE_INFOPLIST_FILE = "NO";
+				INFOPLIST_FILE = "Keyboard/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.textablage.personal.keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = "5.0";
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				TARGETED_DEVICE_FAMILY = "1";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = "NO";
+				SKIP_INSTALL = "YES";
+				TEXTABLAGE_APP_GROUP = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				APPLICATION_EXTENSION_API_ONLY = "YES";
+			};
+			name = "Release";
+		};
+		184B519F8E1416CCE38CFFD7 /* Debug */ = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				CLANG_ENABLE_MODULES = "YES";
+				CLANG_ENABLE_OBJC_ARC = "YES";
+				SDKROOT = "iphoneos";
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				SWIFT_VERSION = "5.0";
+				ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+				DEBUG_INFORMATION_FORMAT = "dwarf";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				ENABLE_TESTABILITY = "YES";
+				ONLY_ACTIVE_ARCH = "YES";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"DEBUG",
+					"$(inherited)",
+				);
+			};
+			name = "Debug";
+		};
+		1F79B9576C5F008FBE23773C /* Release */ = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				CODE_SIGN_STYLE = "Automatic";
+				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = "1";
+				MARKETING_VERSION = "1.0.0";
+				GENERATE_INFOPLIST_FILE = "NO";
+				INFOPLIST_FILE = "App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.textablage.personal.shared";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = "5.0";
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				TARGETED_DEVICE_FAMILY = "1";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = "NO";
+				SKIP_INSTALL = "NO";
+				TEXTABLAGE_APP_GROUP = "group.de.textablage.personal";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+				CODE_SIGN_ENTITLEMENTS = "Config/Shared.entitlements";
+			};
+			name = "Release";
+		};
+		3CC65C0D3C7AFA85496111B5 /* Debug */ = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				CODE_SIGN_STYLE = "Automatic";
+				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = "1";
+				MARKETING_VERSION = "1.0.0";
+				GENERATE_INFOPLIST_FILE = "NO";
+				INFOPLIST_FILE = "Keyboard/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.textablage.personal.shared.keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = "5.0";
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				TARGETED_DEVICE_FAMILY = "1";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = "NO";
+				SKIP_INSTALL = "YES";
+				TEXTABLAGE_APP_GROUP = "group.de.textablage.personal";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				APPLICATION_EXTENSION_API_ONLY = "YES";
+				CODE_SIGN_ENTITLEMENTS = "Config/Shared.entitlements";
+			};
+			name = "Debug";
+		};
+		50796FC0433FFCB886DA32EB /* Release */ = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				CODE_SIGN_STYLE = "Automatic";
+				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = "1";
+				MARKETING_VERSION = "1.0.0";
+				GENERATE_INFOPLIST_FILE = "NO";
+				INFOPLIST_FILE = "Keyboard/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.textablage.personal.shared.keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = "5.0";
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				TARGETED_DEVICE_FAMILY = "1";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = "NO";
+				SKIP_INSTALL = "YES";
+				TEXTABLAGE_APP_GROUP = "group.de.textablage.personal";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				APPLICATION_EXTENSION_API_ONLY = "YES";
+				CODE_SIGN_ENTITLEMENTS = "Config/Shared.entitlements";
+			};
+			name = "Release";
+		};
+		5FFFC947D9A29AEF66DE9A01 /* Release */ = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				CODE_SIGN_STYLE = "Automatic";
+				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = "1";
+				MARKETING_VERSION = "1.0.0";
+				GENERATE_INFOPLIST_FILE = "NO";
+				INFOPLIST_FILE = "App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.textablage.personal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = "5.0";
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				TARGETED_DEVICE_FAMILY = "1";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = "NO";
+				SKIP_INSTALL = "NO";
+				TEXTABLAGE_APP_GROUP = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+			};
+			name = "Release";
+		};
+		8FC4B5A917BE449097000CCA /* Debug */ = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				CODE_SIGN_STYLE = "Automatic";
+				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = "1";
+				MARKETING_VERSION = "1.0.0";
+				GENERATE_INFOPLIST_FILE = "NO";
+				INFOPLIST_FILE = "App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.textablage.personal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = "5.0";
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				TARGETED_DEVICE_FAMILY = "1";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = "NO";
+				SKIP_INSTALL = "NO";
+				TEXTABLAGE_APP_GROUP = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+			};
+			name = "Debug";
+		};
+		9425368689A91FD626621ABA /* Debug */ = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				CODE_SIGN_STYLE = "Automatic";
+				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = "1";
+				MARKETING_VERSION = "1.0.0";
+				GENERATE_INFOPLIST_FILE = "NO";
+				INFOPLIST_FILE = "Widgets/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.textablage.personal.shared.widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = "5.0";
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				TARGETED_DEVICE_FAMILY = "1";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = "NO";
+				SKIP_INSTALL = "YES";
+				TEXTABLAGE_APP_GROUP = "group.de.textablage.personal";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				APPLICATION_EXTENSION_API_ONLY = "YES";
+				CODE_SIGN_ENTITLEMENTS = "Config/Shared.entitlements";
+			};
+			name = "Debug";
+		};
+		9F4FADD434D9734B2CA1F16A /* Release */ = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				CODE_SIGN_STYLE = "Automatic";
+				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = "1";
+				MARKETING_VERSION = "1.0.0";
+				GENERATE_INFOPLIST_FILE = "NO";
+				INFOPLIST_FILE = "Widgets/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.textablage.personal.shared.widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = "5.0";
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				TARGETED_DEVICE_FAMILY = "1";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = "NO";
+				SKIP_INSTALL = "YES";
+				TEXTABLAGE_APP_GROUP = "group.de.textablage.personal";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				APPLICATION_EXTENSION_API_ONLY = "YES";
+				CODE_SIGN_ENTITLEMENTS = "Config/Shared.entitlements";
+			};
+			name = "Release";
+		};
+		A824290273A346217D9BE6F4 /* Release */ = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				CLANG_ENABLE_MODULES = "YES";
+				CLANG_ENABLE_OBJC_ARC = "YES";
+				SDKROOT = "iphoneos";
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				SWIFT_VERSION = "5.0";
+				ENABLE_USER_SCRIPT_SANDBOXING = "YES";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_COMPILATION_MODE = "wholemodule";
+			};
+			name = "Release";
+		};
+		AFF14C10AE4A7BBE9AE018F6 /* Debug */ = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				CODE_SIGN_STYLE = "Automatic";
+				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = "1";
+				MARKETING_VERSION = "1.0.0";
+				GENERATE_INFOPLIST_FILE = "NO";
+				INFOPLIST_FILE = "Keyboard/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.textablage.personal.keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = "5.0";
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				TARGETED_DEVICE_FAMILY = "1";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = "NO";
+				SKIP_INSTALL = "YES";
+				TEXTABLAGE_APP_GROUP = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				APPLICATION_EXTENSION_API_ONLY = "YES";
+			};
+			name = "Debug";
+		};
+		C9B61EB3D92CABB4462482C8 /* Debug */ = {
+			isa = "XCBuildConfiguration";
+			buildSettings = {
+				CODE_SIGN_STYLE = "Automatic";
+				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = "1";
+				MARKETING_VERSION = "1.0.0";
+				GENERATE_INFOPLIST_FILE = "NO";
+				INFOPLIST_FILE = "App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.textablage.personal.shared";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = "5.0";
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				TARGETED_DEVICE_FAMILY = "1";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = "NO";
+				SKIP_INSTALL = "NO";
+				TEXTABLAGE_APP_GROUP = "group.de.textablage.personal";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon";
+				CODE_SIGN_ENTITLEMENTS = "Config/Shared.entitlements";
+			};
+			name = "Debug";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14E586E4324BDDD5494634DC /* Build configuration list for project */ = {
+			isa = "XCConfigurationList";
+			buildConfigurations = (
+				184B519F8E1416CCE38CFFD7 /* Debug */,
+				A824290273A346217D9BE6F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		1E0F7EE884023E02B5DD2992 /* Build configuration list for TextablageShared */ = {
+			isa = "XCConfigurationList";
+			buildConfigurations = (
+				C9B61EB3D92CABB4462482C8 /* Debug */,
+				1F79B9576C5F008FBE23773C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		226F42DF1740AAD545409B43 /* Build configuration list for TextablageWidgets */ = {
+			isa = "XCConfigurationList";
+			buildConfigurations = (
+				9425368689A91FD626621ABA /* Debug */,
+				9F4FADD434D9734B2CA1F16A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		761165C80791F6D244DD6FF4 /* Build configuration list for Textablage */ = {
+			isa = "XCConfigurationList";
+			buildConfigurations = (
+				8FC4B5A917BE449097000CCA /* Debug */,
+				5FFFC947D9A29AEF66DE9A01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		DEF0847741357DE2FABB8E39 /* Build configuration list for TextablageKeyboard */ = {
+			isa = "XCConfigurationList";
+			buildConfigurations = (
+				AFF14C10AE4A7BBE9AE018F6 /* Debug */,
+				0D5D2DEA00B65A422C3CD1F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+		F318C2C0A9E5221AF7949111 /* Build configuration list for TextablageKeyboardShared */ = {
+			isa = "XCConfigurationList";
+			buildConfigurations = (
+				3CC65C0D3C7AFA85496111B5 /* Debug */,
+				50796FC0433FFCB886DA32EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 244210E48437B6556980A702 /* Project object */;
+}

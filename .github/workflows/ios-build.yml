@@ -1,0 +1,70 @@
+name: iPhone-Projekt bauen
+
+on:
+  workflow_dispatch:
+    inputs:
+      scheme:
+        description: Variante (die gemeinsame Variante braucht später passende App-Group-Berechtigungen)
+        type: choice
+        default: Textablage
+        options:
+          - Textablage
+          - Textablage-Gemeinsam
+  push:
+    paths:
+      - 'App/**'
+      - 'Shared/**'
+      - 'Keyboard/**'
+      - 'Widgets/**'
+      - 'Resources/**'
+      - 'Config/**'
+      - 'Tests/**'
+      - 'Package.swift'
+      - 'scripts/**'
+      - '.github/workflows/ios-build.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 20
+    env:
+      BUILD_SCHEME: ${{ github.event_name == 'workflow_dispatch' && inputs.scheme || 'Textablage' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Werkzeuge anzeigen
+        run: |
+          xcodebuild -version
+          swift --version
+      - name: Projekt erzeugen und Speicherkern testen
+        run: |
+          python3 scripts/generate_project.py
+          swift test
+      - name: Simulator-Build mit Apple-SDK
+        run: |
+          xcodebuild -project Textablage.xcodeproj -scheme "$BUILD_SCHEME" \
+            -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath "build/$BUILD_SCHEME/Simulator" \
+            CODE_SIGNING_ALLOWED=NO build
+      - name: Nicht signiertes Gerätearchiv bauen
+        run: |
+          xcodebuild -project Textablage.xcodeproj -scheme "$BUILD_SCHEME" \
+            -sdk iphoneos -destination 'generic/platform=iOS' \
+            -archivePath "build/$BUILD_SCHEME.xcarchive" \
+            CODE_SIGNING_ALLOWED=NO \
+            OTHER_LDFLAGS='$(inherited) -Wl,-no_adhoc_codesign' archive
+      - name: Gerätearchiv prüfen und unsignierte IPA erstellen
+        run: |
+          python3 scripts/package_ipa.py "build/$BUILD_SCHEME.xcarchive" \
+            --output "build/ipa/$BUILD_SCHEME-unsigniert.ipa"
+      - name: IPA mit Prüfsumme und Signierungsstatus bereitstellen
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.BUILD_SCHEME }}-IPA-unsigniert
+          path: |
+            build/ipa/*.ipa
+            build/ipa/*.ipa.sha256
+            build/ipa/*.ipa.json
+          if-no-files-found: error
